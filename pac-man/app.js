@@ -117,6 +117,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function pacDotEaten() {
         if(squares[pacmanCurrentIndex].classList.contains('pac-dot')) {
             score++
+            // TODO: Fix error below
             scoreDisplay.textContent = score
             squares[pacmanCurrentIndex].classList.remove('pac-dot')
         }
